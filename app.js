@@ -19,3 +19,20 @@ moviesEl.addEventListener('click', (e) => {
   btn.classList.toggle('active', isFav);
   btn.textContent = isFav ? '♥ Quitar favorito' : '♡ Marcar favorito';
 });
+
+// Example movies array (replace with your actual data source)
+const movies = [
+  { id: '1', title: 'Movie 1' },
+  { id: '2', title: 'Movie 2' },
+  { id: '3', title: 'Movie 3' },
+  { id: '4', title: 'Movie 4' },
+  { id: '5', title: 'Movie 5' }
+];
+
+// Render movie elements dynamically
+moviesEl.innerHTML = movies.map(movie => `
+  <article>
+    <h2>${movie.title}</h2>
+    <button class="fav" data-id="${movie.id}">♡ Marcar favorito</button>
+  </article>
+`).join('');
