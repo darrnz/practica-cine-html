@@ -16,23 +16,43 @@
     <main>
         <section>
             <h2>Películas</h2>
-            <div id="movies"><!-- aquí se pintan las tarjetas --></div>
-        </section>
-
-        <section>
-            <h2>Agregar película</h2>
-            <form id="movie-form" autocomplete="off">
-                <label>Título
-                    <input id="title" name="title" required placeholder="Interstellar">
-                </label>
-                <label>Año
-                    <input id="year" name="year" type="number" min="1888" max="2100" required placeholder="2014">
-                </label>
-                <label>URL del póster
-                    <input id="poster" name="poster" type="url" required placeholder="https://...">
-                </label>
-                <button type="submit">Agregar</button>
-            </form>
+            <div id="movies">
+                <article class="card" data-id="m1">
+                    <img src="https://via.placeholder.com/300x450?text=Inception" alt="Poster de Inception"
+                        onerror="this.src='https://via.placeholder.com/300x450?text=Sin+poster';this.onerror=null">
+                    <h3>Inception</h3>
+                    <p>(2010)</p>
+                    <button class="fav" data-id="m1">♡ Marcar favorito</button>
+                </article>
+                <article class="card" data-id="m2">
+                    <img src="https://via.placeholder.com/300x450?text=Interstellar" alt="Poster de Interstellar"
+                        onerror="this.src='https://via.placeholder.com/300x450?text=Sin+poster';this.onerror=null">
+                    <h3>Interstellar</h3>
+                    <p>(2014)</p>
+                    <button class="fav" data-id="m2">♡ Marcar favorito</button>
+                </article>
+                <article class="card" data-id="m3">
+                    <img src="https://via.placeholder.com/300x450?text=Matrix" alt="Poster de Matrix"
+                        onerror="this.src='https://via.placeholder.com/300x450?text=Sin+poster';this.onerror=null">
+                    <h3>Matrix</h3>
+                    <p>(1999)</p>
+                    <button class="fav" data-id="m3">♡ Marcar favorito</button>
+                </article>
+                <article class="card" data-id="m4">
+                    <img src="https://via.placeholder.com/300x450?text=Arrival" alt="Poster de Arrival"
+                        onerror="this.src='https://via.placeholder.com/300x450?text=Sin+poster';this.onerror=null">
+                    <h3>Arrival</h3>
+                    <p>(2016)</p>
+                    <button class="fav" data-id="m4">♡ Marcar favorito</button>
+                </article>
+                <article class="card" data-id="m5">
+                    <img src="https://via.placeholder.com/300x450?text=Blade+Runner" alt="Poster de Blade Runner"
+                        onerror="this.src='https://via.placeholder.com/300x450?text=Sin+poster';this.onerror=null">
+                    <h3>Blade Runner</h3>
+                    <p>(1982)</p>
+                    <button class="fav" data-id="m5">♡ Marcar favorito</button>
+                </article>
+            </div>
         </section>
     </main>
 
