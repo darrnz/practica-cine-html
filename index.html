@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Cine — Favoritos simples</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Cine</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Películas</h2>
+            <div id="movies"><!-- aquí se pintan las tarjetas --></div>
+        </section>
+
+        <section>
+            <h2>Agregar película</h2>
+            <form id="movie-form" autocomplete="off">
+                <label>Título
+                    <input id="title" name="title" required placeholder="Interstellar">
+                </label>
+                <label>Año
+                    <input id="year" name="year" type="number" min="1888" max="2100" required placeholder="2014">
+                </label>
+                <label>URL del póster
+                    <input id="poster" name="poster" type="url" required placeholder="https://...">
+                </label>
+                <button type="submit">Agregar</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
